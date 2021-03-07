@@ -1,0 +1,27 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<br>
+JUDUL
+<input type="text" [(ngModel)]="judul">
+
+<br>
+ISI PESAN
+<input type="text" [(ngModel)]="isi">
+
+<br>
+TANGGAL
+<input type="text" [(ngModel)]="tgl">
+
+<br><br>
+<button (click)="save()">SAVE</button>
+
+<br><br>
+<button (click)="hal2()">HALAMAN 2</button>
+<button (click)="hal3()">HALAMAN 3</button>
+
+
+<router-outlet>
+
