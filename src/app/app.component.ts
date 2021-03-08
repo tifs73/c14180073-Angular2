@@ -1,5 +1,7 @@
+import { global } from '@angular/compiler/src/util';
 import { Component, VERSION } from '@angular/core';
 import { Router } from '@angular/router';
+import { GlobalVarService } from './global-var.service';
 
 @Component({
   selector: 'my-app',
@@ -9,18 +11,11 @@ import { Router } from '@angular/router';
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public globalvar : GlobalVarService) {
 
   }
-
-  data = new Array(10).fill(0);
-
-  judul: "";
-  isi: "";
-  tgl: "";
-
-  save() {
-
+  hal1() {
+    this.router.navigate(["/input"]);
   }
 
   hal2() {

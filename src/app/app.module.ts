@@ -8,10 +8,12 @@ import { DetailComponent } from "./detail/detail.component";
 import { RouterModule, Routes } from "@angular/router";
 import { FavoriteComponent } from "./favorite/favorite.component";
 import { GlobalVarService } from "./global-var.service";
+import { InputComponent } from "./input/input.component";
 
 const ROUTES: Routes = [
   { path: "detail", component: DetailComponent },
-  { path: "favorite", component: FavoriteComponent }
+  { path: "favorite", component: FavoriteComponent },
+  { path: "input", component: InputComponent }
 ];
 
 @NgModule({
@@ -20,7 +22,8 @@ const ROUTES: Routes = [
     AppComponent,
     HelloComponent,
     DetailComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    InputComponent
   ],
   bootstrap: [AppComponent],
   providers: [GlobalVarService]
