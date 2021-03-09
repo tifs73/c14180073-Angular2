@@ -12,15 +12,19 @@ export class InputComponent implements OnInit {
 
   ngOnInit() {}
 
-  judul: "";
-  isi: "";
-  tgl: "";
+  judul = "";
+  isi = "";
+  tgl = "";
 
   save() {
-    var datanote: any[];
-    datanote[0] = this.judul;
-    datanote[1] = this.isi;
-    datanote[2] = this.tgl;
+    // this.globalvar.setJudul(this.judul);
+    // this.globalvar.setIsi(this.isi);
+    // this.globalvar.setTgl(this.tgl);
+    var datanote = [];
+    datanote[0] = this.judul.toString();
+    console.log(this.globalvar.data);
+    datanote[1] = this.isi.toString();
+    datanote[2] = this.tgl.toString();
     this.globalvar.data.push(datanote);
   }
 }

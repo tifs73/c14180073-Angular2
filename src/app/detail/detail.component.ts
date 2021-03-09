@@ -12,7 +12,4 @@ export class DetailComponent implements OnInit {
 
   ngOnInit() {}
 
-  alldetail() {
-    this.globalvar.data.pop();
-  }
 }

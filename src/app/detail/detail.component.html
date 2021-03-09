@@ -1,3 +1,7 @@
 <p>
-<button (click)="alldetail()">show</button>
+  <label *ngFor = "let detail of globalvar.data">
+    {{detail[1]}} <br>
+    {{detail[2]}} <br>
+    {{detail[3]}}
+  </label>
 </p>
