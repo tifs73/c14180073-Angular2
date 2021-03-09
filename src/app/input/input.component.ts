@@ -17,14 +17,10 @@ export class InputComponent implements OnInit {
   tgl = "";
 
   save() {
-    // this.globalvar.setJudul(this.judul);
-    // this.globalvar.setIsi(this.isi);
-    // this.globalvar.setTgl(this.tgl);
     var datanote = [];
-    datanote[0] = this.judul.toString();
-    console.log(this.globalvar.data);
-    datanote[1] = this.isi.toString();
-    datanote[2] = this.tgl.toString();
+    datanote[1] = this.judul.toString();
+    datanote[2] = this.isi.toString();
+    datanote[3] = this.tgl.toString();
     this.globalvar.data.push(datanote);
   }
 }

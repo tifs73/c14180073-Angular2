@@ -12,4 +12,11 @@ export class DetailComponent implements OnInit {
 
   ngOnInit() {}
 
+  fav(i) {
+    for (var j = 0; j < this.globalvar.data.length; j++) {
+      if ((this.globalvar.data[j] = this.globalvar.data[i])) {
+        this.globalvar.datafav.push(this.globalvar.data[j]);
+      }
+    }
+  }
 }

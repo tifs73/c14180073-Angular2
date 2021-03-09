@@ -1,7 +1,9 @@
 <p>
-  <label *ngFor = "let detail of globalvar.data">
-    {{detail[1]}} <br>
-    {{detail[2]}} <br>
-    {{detail[3]}}
+  <label *ngFor = "let detail of globalvar.data, let i = index">
+    judul : {{detail[1]}} <br>
+    isi notes : {{detail[2]}} <br>
+    tanggal : {{detail[3]}} <br>
+    <button (click)="fav(i)">Favorite</button>
+    <br> <br>
   </label>
 </p>
